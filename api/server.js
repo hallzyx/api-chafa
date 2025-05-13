@@ -9,7 +9,6 @@ server.use(cors({
     origin: [
       'http://localhost:5173',
       'https://aaaavue-git-main-hallzyxs-projects.vercel.app',
-      'https://api-chafa-git-main-hallzyxs-projects.vercel.app'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
