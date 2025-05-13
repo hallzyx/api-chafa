@@ -15,7 +15,7 @@ server.use(cors({
   }))
 
 server.use(middlewares)
-server.use(jsonServer.bodyParser)
+//server.use(jsonServer.bodyParser)
 // Add this before server.use(router)
 server.use(jsonServer.rewriter({
     '/api/v1/*': '/$1'
