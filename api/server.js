@@ -10,6 +10,11 @@ server.use(jsonServer.rewriter({
     '/api/v1/*': '/$1',
     '/product/:resource/:id/show': '/:resource/:id'
 }))
+
+server.use(cors({
+    origin: ['http://localhost:5173', 'https://aaaavue-git-main-hallzyxs-projects.vercel.app']
+  }))
+
 server.use(router)
 server.listen(3001, () => {
     console.log('JSON Server is running')
